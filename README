@@ -8,14 +8,14 @@ After downloading the zip/tar.gz file, you must edit the file css/jquery.richtex
 
 After that is only a matter of linking to the css file and the corresponding Javascripts files.
 
-&lt;!-- Needed Libraries --&gt;
-&lt;script type="text/javascript" src="path/to/jquery.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="path/to/colorpicker.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="path/to/jquery.alerts.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="path/to/elements.js"&gt;&lt;/script&gt;
-&lt;!-- Plugin Files --&gt;
-&lt;script type="text/javascript" src="path/to/jquery.richtext.js"&gt;&lt;/script&gt;
-&lt;link href="css/jquery.richtext.css" type="text/css" rel="stylesheet"&gt;
+<!-- Needed Libraries -->
+<script type="text/javascript" src="path/to/jquery.js"></script>
+<script type="text/javascript" src="path/to/colorpicker.js"></script>
+<script type="text/javascript" src="path/to/jquery.alerts.js"></script>
+<script type="text/javascript" src="path/to/elements.js"></script>
+<!-- Plugin Files -->
+<script type="text/javascript" src="path/to/jquery.richtext.js"></script>
+<link href="css/jquery.richtext.css" type="text/css" rel="stylesheet">
 
 To use the plugin you use the richtText() function.
 

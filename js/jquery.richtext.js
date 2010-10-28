@@ -199,8 +199,7 @@
             	var tmp = newwindow2.document;
 				tmp.write('<html><head><title>jrichtext Preview<\/title><\/head><body>');
 				tmp.write(getHTML(n));
-				//The "Close window" link crashes the page in chrome
-				//tmp.write("<p style='text-align: center'><a href='#' onClick='window.close()'>Close Window<\/a><\/p>");
+				tmp.write("<p style='text-align: center'><a href='#' onClick='window.close()'>Close Window<\/a><\/p>");
 				tmp.write('<\/body><\/html>');
 				tmp.close();
             }
