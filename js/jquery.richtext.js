@@ -215,7 +215,7 @@
             	
             	$(".opciones_combo").hide();
             	$("#"+id_wrapper+" textarea").toggle();
-				$("#"+id_editor)[0].toggle();
+				$("#"+id_editor).toggle();
 				$(".source-overlay").toggle();
             }
             if(command=="do-link"){
