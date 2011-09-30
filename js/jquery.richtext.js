@@ -89,12 +89,12 @@
 
     function getDocument(n){
         var id_editor="richtext_"+n;
-        return $($("#"+id_editor).attr("contentWindow")).attr("document");
+        return $($("#"+id_editor)[0].contentWindow).attr("document");
     }
     
     function setFocus(n){
     	var id_editor="richtext_"+n;
-    	$("#"+id_editor).attr("contentWindow").focus();
+    	$("#"+id_editor)[0].contentWindow.focus();
 	}
 	
 	function getHTML(n){
@@ -215,7 +215,7 @@
             	
             	$(".opciones_combo").hide();
             	$("#"+id_wrapper+" textarea").toggle();
-				$("#"+id_editor).toggle();
+				$("#"+id_editor)[0].toggle();
 				$(".source-overlay").toggle();
             }
             if(command=="do-link"){
@@ -412,7 +412,7 @@
             
             var doc = getDocument(i);
             
-            var w3c = $("#"+id_editor).attr("contentDocument") !== undefined ? true : false;
+            var w3c = $("#"+id_editor)[0].contentDocument !== undefined ? true : false;
 	    	
 	    	if(!opts.readOnly){
 	            doc.designMode = w3c ? "on" : "On";
