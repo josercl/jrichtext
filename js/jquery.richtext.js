@@ -205,7 +205,7 @@
             }
             if(command=="do-source"){
             	var htmlSource=getHTML(n);
-            	
+
             	if($("#"+id_wrapper+" textarea").css("display")=="none"){
             		$("#"+id_wrapper+" textarea").val(htmlSource);
             	}else{
@@ -216,7 +216,7 @@
             	$(".opciones_combo").hide();
             	$("#"+id_wrapper+" textarea").toggle();
 				$("#"+id_editor).toggle();
-				$(".source-overlay").toggle();
+				$("#"+id_wrapper+" .source-overlay").toggle();
             }
             if(command=="do-link"){
             	selectText(n);
